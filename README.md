@@ -1,8 +1,10 @@
 # SQL Commands Cheatsheet
 
-## DDL [Data Manipulation Language]
 
-* CREATE
+### Data Definition Language 
+[deals with descriptions of the database schema and is used to create and modify the structure of database objects in the database]
+
+* CREATE [used to create the database or its objects (like table, index, function, views, store procedure and triggers)]
 
 [Creating a Database](#)
 ```sql 
@@ -21,7 +23,7 @@ CREATE TABLE <TABLE_NAME>
 ```
 
 
-* ALTER
+* ALTER [used to alter the structure of the database]
 
 [Add a new Column](#)
 ```sql
@@ -59,7 +61,7 @@ ALTER TABLE table_name DROP(
 ```
 
 
-* TRUNCATE
+* TRUNCATE [used to remove all records from a table, including all spaces allocated for the records are removed]
 
 
 [Remove all the records from a table.](#)
@@ -69,7 +71,7 @@ TRUNCATE TABLE table_name
 
 
 
-* DROP
+* DROP [used to delete objects from the database]
 
 
 [Remove a table from the database.](#)
@@ -83,10 +85,57 @@ DROP DATABASE database_name;
 
 
 
-* RENAME
+* RENAME [used to rename an object existing in the database]
 
 
 [Set a new name for any existing table](#)
 ```sql
 RENAME TABLE old_table_name to new_table_name;
 ```
+
+
+* COMMENT [used to add comments to the data dictionary]
+---
+
+### Data Query Language 
+[used for performing queries on the data within schema objects] 
+
+* SELECT [used to retrieve data from the database]
+
+
+### Data Manipulation Language
+[deals with the manipulation of data present in the database]
+
+* INSERT [used to insert data into a table]
+
+* UPDATE [used to update existing data within a table]
+
+* DELETE [used to delete records from a database table]
+
+* MERGE [can handle inserts, updates, and deletes all in a single transaction without having to write separate logic for each of these]
+
+* CALL [to execute a routine (a standalone procedure or function, or a procedure or function defined within a type or package)]
+
+* EXPLAIN PLAN [displays execution plans chosen by the optimizer for SELECT , UPDATE , INSERT , and DELETE statements]
+
+* LOCK TABLE [to lock one or more tables, table partitions, or table subpartitions in a specified mode.]
+
+
+### Data Control Language
+[deal with the rights, permissions and other controls of the database system.]
+
+
+* GRANT [gives users access privileges to the database]
+* REVOKE [withdraw user’s access privileges given by using the GRANT command.]
+
+
+### Transaction Control Language
+[deal with the transaction within the database.]
+
+* COMMIT [commits a Transaction.]
+
+* ROLLBACK [rollbacks a transaction in case of any error occurs.]
+
+* SAVEPOINT [sets a savepoint within a transaction.]
+
+* SET TRANSACTION [specify characteristics for the transaction.]
