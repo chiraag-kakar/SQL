@@ -95,6 +95,8 @@ RENAME TABLE old_table_name to new_table_name;
 
 
 * COMMENT [used to add comments to the data dictionary]
+
+
 ---
 
 ### Data Query Language 
